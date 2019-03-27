@@ -4,7 +4,7 @@ namespace JasonGrimes;
 
 class Paginator
 {
-    const NUM_PLACEHOLDER = '(:num)';
+    const NUM_PLACEHOLDER = '--NUM--';
 
     protected $totalItems;
     protected $numPages;
@@ -12,8 +12,8 @@ class Paginator
     protected $currentPage;
     protected $urlPattern;
     protected $maxPagesToShow = 10;
-    protected $previousText = 'Previous';
-    protected $nextText = 'Next';
+    protected $previousText = 'Vorherige';
+    protected $nextText = 'Nächste';
 
     /**
      * @param int $totalItems The total number of items.
